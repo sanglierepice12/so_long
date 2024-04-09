@@ -12,7 +12,37 @@
 
 #include "../inc/so_long.h"
 
-void	ft_map_len(t_map *map)
+void	ft_check_wall(char *line, t_map *map)
+{
+	int	i;
+
+	i = 0;
+	while (line[i])
+	{
+		if (line[i] != '1')
+			ft_exit(map, "Error: Wall is not finish, got back to work !\n");
+		i++;
+	}
+	(void)map;
+}
+
+void	map_len_y(t_map *map)
+{
+	int		i;
+	char	*line;
+	i = 0;
+	while (1)
+	{
+		line = gnl(map->fd);
+		if (!line)
+			break ;
+		free(line);
+		i++;
+	}
+	map->y = i;
+}
+
+void	map_len_x_check(t_map *map)
 {
 	char	*line;
 	int		i;
@@ -20,8 +50,9 @@ void	ft_map_len(t_map *map)
 
 	line = gnl(map->fd);
 	if (!line)
-		return ;
-	map->len = ft_strlen(line);
+		ft_exit(map, "Error: Nothing turn in .ber");
+	map->x = ft_strlen(line);
+	ft_check_wall(line, map);
 	free(line);
 	i = 0;
 	while (1)
@@ -30,9 +61,17 @@ void	ft_map_len(t_map *map)
 		if (!line)
 			break ;
 		len = ft_strlen(line);
-		if (map->len != len)
+		if (map->x != len)
 			ft_exit(map,"Error: Map is not valid (len) [mv]\n");
 		free(line);
 		i++;
 	}
+}
+
+void	ft_map_validator(t_map *map)
+{
+	map_len_x_check(map);
+	map_len_y(map);
+	map_generator(map);
+	//check inside map
 }

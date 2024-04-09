@@ -8,18 +8,22 @@
 typedef struct s_map
 {
 	int		fd;
-	int		len;
+	int		x;
+	int 	y;
 	char	*map;
 }		t_map;
 
 
-/*-------PARSE--------*/
+/*-----------PARSE------------*/
 void	ft_parse_the_map(char *argv);
 
-/*-------MAP--------*/
-void	ft_map_len(t_map *map);
+/*-------MAP_CHECKER----------*/
+void	ft_map_validator(t_map *map);
 
-/*-------EXIT--------*/
+/*-------MAP_GENERATOR--------*/
+void	map_generator(t_map *map);
+
+/*-----------EXIT-------------*/
 void	ft_exit(t_map *map, char *msg);
 void	ft_free_things(t_map *map);
 

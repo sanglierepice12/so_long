@@ -35,11 +35,10 @@ void	ft_parse_the_map(char *argv)
 		exit(EXIT_FAILURE);
 	}
 	ft_check_ext(argv, map);
-	ft_map_len(map);
-	if (!map->len)
+	ft_map_validator(map);
+	if (!map->x)
 		ft_exit(map, "Error: No map available.\n");
 	close(map->fd);
-
-
-	free(map);
+	printf("x =%d, y =%d", map->x, map->y);
+	ft_free_things(map);
 }

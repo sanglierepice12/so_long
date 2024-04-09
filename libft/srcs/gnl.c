@@ -16,8 +16,14 @@ char	*ft_rm_backslash(char *str)
 {
 	char	*dest;
 	size_t	i;
+	size_t	len;
 
-	dest = ft_calloc(ft_strlen(str) - 1, sizeof(char));
+	len = 0;
+	while (str[len] && str[len + 1] != '\n')
+		len++;
+	if (str[len] != '\n')
+		len = ft_strlen(str);
+	dest = ft_calloc(len + 1, sizeof(char));
 	if (!dest)
 	{
 		ft_putstr_fd("Error: Calloc rm_bs [gnl]", 2);
