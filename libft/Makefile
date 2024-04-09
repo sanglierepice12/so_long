@@ -47,7 +47,8 @@ SRCS	=	ft_atoi.c		\
 			ft_toupper.c	\
 			ft_printf.c		\
 			ft_printf_utils.c\
-			get_next_line.c
+			gnl.c			\
+			gnl_utils.c
 
 BNS		=	ft_lstadd_back.c	\
 			ft_lstadd_front.c	\

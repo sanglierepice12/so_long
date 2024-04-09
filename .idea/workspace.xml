@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="CMakeRunConfigurationManager">
+    <generated>
+      <config projectName="so_long" targetName="so_long" />
+      <config projectName="so_long" targetName="fclean" />
+      <config projectName="so_long" targetName="re" />
+      <config projectName="so_long" targetName="all" />
+    </generated>
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" ENABLED="true" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8323335c-7c2d-4891-8c3f-95a1ac8a54c6" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/mlx_linux" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inc/so_long.h" beforeDir="false" afterPath="$PROJECT_DIR$/inc/so_long.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/libft/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/incs/libft.h" beforeDir="false" afterPath="$PROJECT_DIR$/libft/incs/libft.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/libft.a" beforeDir="false" afterPath="$PROJECT_DIR$/libft/libft.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/objs/ft_bzero.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/objs/ft_bzero.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/objs/ft_calloc.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/objs/ft_calloc.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/objs/ft_isalnum.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/objs/ft_isalnum.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/objs/ft_itoa.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/objs/ft_itoa.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/objs/ft_memchr.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/objs/ft_memchr.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/objs/ft_memcmp.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/objs/ft_memcmp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/objs/ft_memcpy.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/objs/ft_memcpy.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/objs/ft_memmove.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/objs/ft_memmove.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/objs/ft_memset.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/objs/ft_memset.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/objs/ft_printf.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/objs/ft_printf.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/objs/ft_printf_utils.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/objs/ft_printf_utils.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/objs/ft_putchar_fd.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/objs/ft_putchar_fd.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/objs/ft_putendl_fd.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/objs/ft_putendl_fd.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/objs/ft_putnbr_fd.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/objs/ft_putnbr_fd.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/objs/ft_putstr_fd.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/objs/ft_putstr_fd.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/objs/ft_split.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/objs/ft_split.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/objs/ft_strchr.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/objs/ft_strchr.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/objs/ft_strdup.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/objs/ft_strdup.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/objs/ft_striteri.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/objs/ft_striteri.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/objs/ft_strjoin.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/objs/ft_strjoin.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/objs/ft_strlcat.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/objs/ft_strlcat.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/objs/ft_strlcpy.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/objs/ft_strlcpy.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/objs/ft_strlen.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/objs/ft_strlen.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/objs/ft_strmapi.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/objs/ft_strmapi.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/objs/ft_strncmp.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/objs/ft_strncmp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/objs/ft_strnstr.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/objs/ft_strnstr.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/objs/ft_strrchr.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/objs/ft_strrchr.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/objs/ft_strtrim.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/objs/ft_strtrim.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/objs/ft_substr.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/objs/ft_substr.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/objs/get_next_line.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/srcs/get_next_line.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/objs/parse.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/objs/so_long.o" beforeDir="false" afterPath="$PROJECT_DIR$/objs/so_long.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/so_long" beforeDir="false" afterPath="$PROJECT_DIR$/so_long" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs/check.c" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/check.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs/exit.c" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/exit.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs/so_long.c" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/so_long.c" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MakefileLocalSettings">
+    <option name="availableProjects">
+      <map>
+        <entry>
+          <key>
+            <ExternalProjectPojo>
+              <option name="name" value="so_long" />
+              <option name="path" value="$PROJECT_DIR$" />
+            </ExternalProjectPojo>
+          </key>
+          <value>
+            <list>
+              <ExternalProjectPojo>
+                <option name="name" value="so_long" />
+                <option name="path" value="$PROJECT_DIR$" />
+              </ExternalProjectPojo>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="projectSyncType">
+      <map>
+        <entry key="$PROJECT_DIR$" value="RE_IMPORT" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectApplicationVersion">
+    <option name="ide" value="CLion" />
+    <option name="majorVersion" value="2023" />
+    <option name="minorVersion" value="3.4" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="2edV22ccXhBr8ZHx3wpCxaz1WFz" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
+    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/gostr/valgrind_42/42/so_long&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RunManager" selected="Native Application.all">
+    <configuration name="all" type="CLionNativeAppRunConfigurationType" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="so_long" TARGET_NAME="all" CONFIG_NAME="all" version="1">
+      <method v="2">
+        <option name="CLION.COMPOUND.BUILD" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="fclean" type="CLionNativeAppRunConfigurationType" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="so_long" TARGET_NAME="fclean" CONFIG_NAME="fclean" version="1">
+      <method v="2">
+        <option name="CLION.COMPOUND.BUILD" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="re" type="CLionNativeAppRunConfigurationType" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="so_long" TARGET_NAME="re" CONFIG_NAME="re" version="1">
+      <method v="2">
+        <option name="CLION.COMPOUND.BUILD" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="so_long" type="CLionNativeAppRunConfigurationType" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="so_long" TARGET_NAME="so_long" CONFIG_NAME="so_long" version="1">
+      <method v="2">
+        <option name="CLION.COMPOUND.BUILD" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Native Application.all" />
+      <item itemvalue="Native Application.fclean" />
+      <item itemvalue="Native Application.re" />
+      <item itemvalue="Native Application.so_long" />
+    </list>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8323335c-7c2d-4891-8c3f-95a1ac8a54c6" name="Changes" comment="" />
+      <created>1712234231364</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1712234231364</updated>
+      <workItem from="1712234232423" duration="4709000" />
+      <workItem from="1712303853812" duration="20000" />
+      <workItem from="1712305262403" duration="2379000" />
+      <workItem from="1712322177872" duration="90000" />
+      <workItem from="1712323439074" duration="608000" />
+      <workItem from="1712567664048" duration="5667000" />
+      <workItem from="1712644776932" duration="14253000" />
+      <workItem from="1712664743102" duration="2541000" />
+      <workItem from="1712667326710" duration="1006000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

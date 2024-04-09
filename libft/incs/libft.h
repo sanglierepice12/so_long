@@ -20,7 +20,7 @@
 # include <stdarg.h>
 
 # ifndef BUFFER_SIZE
-#  define BUFFER_SIZE 1024
+#  define BUFFER_SIZE 10
 # endif
 
 typedef struct s_list
@@ -88,6 +88,7 @@ int		ft_putnbr_x(unsigned int nbr, char *base);
 int		ft_putmem(void *ptr);
 
 /*get_next_line*/
-char	*get_next_line(int fd);
+char	*gnl(int fd);
+int		ft_end(char *buf);
 
 #endif

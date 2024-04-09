@@ -12,22 +12,34 @@
 
 #include "../inc/so_long.h"
 
-static void	ft_check_open(char *argv)
-{
-	if (open(argv, O_RDONLY) == -1)
-		exit(EXIT_FAILURE);
-}
-
-static void	ft_check_ext(char *argv)
+static void	ft_check_ext(char *argv, t_map *map)
 {
 	size_t	len;
+
 	len = ft_strlen(argv);
 	if (ft_strncmp(argv + (len - 4), ".ber", 4))
-		exit(EXIT_FAILURE);
+		ft_exit(map, "Error: Wrong extension [check]\n");
+	map->fd = open(argv, O_RDONLY);
+	if (map->fd == -1)
+		ft_exit(map, "Error: Problem with fd [check]\n");
 }
 
 void	ft_parse_the_map(char *argv)
 {
-	ft_check_ext(argv);
-	ft_check_open(argv);
+	t_map	*map;
+
+	map = ft_calloc(1, sizeof(t_map));
+	if (!map)
+	{
+		ft_putstr_fd("Error: Calloc [check]", 2);
+		exit(EXIT_FAILURE);
+	}
+	ft_check_ext(argv, map);
+	ft_map_len(map);
+	if (!map->len)
+		ft_exit(map, "Error: No map available.\n");
+	close(map->fd);
+
+
+	free(map);
 }
