@@ -33,13 +33,17 @@ char	*str_join_map(char *src, char *map_buf, t_map *map)
 	size_t	len;
 	int		i;
 
+	len = 0;
 	len = ft_strlen(src) + ft_strlen(map_buf);
-	temp = ft_calloc(len, sizeof(char) + 1);
+	temp = ft_calloc(len + 1, sizeof(char));
 	if (!temp)
 		ft_exit(map, "Error: Calloc crash. [fill]\n");
-	i = -1;
-	while (i++, src[i])
+	i = 0;
+	while (src[i])
+	{
 		temp[i] = src[i];
+		i++;
+	}
 	len = 0;
 	while (map_buf[len])
 	{
@@ -66,12 +70,12 @@ static void	ft_fill_map(int fd, t_map *map)
 	while (bytes == 1024)
 	{
 		bytes = read(fd, map_buf, bytes);
+		map_buf[bytes] = '\0';
 		map_gen = str_join_map(map_gen, map_buf, map);
 		i += bytes;
 		if (i == 0)
 			ft_exit(map, "Nothing in the map, go back to work ! [fill]\n");
 	}
-	map_gen[i] = '\0';
 	map->map = ft_split(map_gen, '\n');
 	free(map_gen);
 }

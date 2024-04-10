@@ -27,7 +27,71 @@ static void	ft_check_len(t_map *map)
 	}
 }
 
+static size_t	ft_map_len_check_side(char **str, t_map *map)
+{
+	size_t	i;
+	size_t	j;
+
+	j = ft_strlen(str[0]);
+	i = 0;
+	while (str[i])
+	{
+		if (str[i][0] != '1' || str[i][j - 1] != '1')
+			ft_exit(map, "Error: Miss a wall, go back to work !\n");
+		i++;
+	}
+	return (i);
+}
+
+void	ft_check_wall(t_map *map)
+{
+	size_t	y;
+	size_t	i;
+	char	*map_z;
+	char	*map_e;
+
+	i = 0;
+	y = ft_map_len_check_side(map->map, map);
+	map_z = ft_strdup(map->map[0]);
+	map_e = ft_strdup(map->map[y - 1]);
+	while (map_z[i] && map_e[i])
+	{
+		if (map_z[i] != '1' || map_e[i] != '1')
+		{
+			free(map_e);
+			free(map_z);
+			ft_exit(map, "Error: Miss a wall, go back to work !\n");
+		}
+		i++;
+	}
+	free(map_e);
+	free(map_z);
+}
+
+void	ft_check_token(t_map *map)
+{
+	size_t	i;
+	size_t	j;
+	int		token[2];
+
+	ft_bzero(token, 3);
+	i = 0;
+	while (map->map[i])
+	{
+		j = 0;
+		while (map->map[i][j])
+		{
+			if (map->map[i][j] == 'E')
+				token[0] = 1;
+			j++;
+		}
+		i++;
+	}
+}
+
 void	ft_check_map(t_map *map)
 {
 	ft_check_len(map);
+	ft_check_wall(map);
+	ft_check_token(map);
 }
