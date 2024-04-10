@@ -72,9 +72,11 @@ void	ft_check_token(t_map *map)
 {
 	size_t	i;
 	size_t	j;
-	int		token[2];
+	int		token[3];
 
-	ft_bzero(token, 3);
+	token[0] = 0;
+	token[1] = 0;
+	token[2] = 0;
 	i = 0;
 	while (map->map[i])
 	{
@@ -82,11 +84,21 @@ void	ft_check_token(t_map *map)
 		while (map->map[i][j])
 		{
 			if (map->map[i][j] == 'E')
-				token[0] = 1;
+				token[0] += 1;
+			if (map->map[i][j] == 'P')
+				token[1] += 1;
+			if (map->map[i][j] == 'C')
+				token[2] += 1;
 			j++;
 		}
 		i++;
 	}
+	if (token[0] != 1)
+		ft_exit(map, "Error: To much exit, destroy one. [map_check]\n");
+	if (token[1] != 1)
+		ft_exit(map, "Error: Wrong number of players, kill one. [map_check]\n");
+	if (token[0] == 0)
+		ft_exit(map, "Error: Not enough coins, go make cash. [map_check]\n");
 }
 
 void	ft_check_map(t_map *map)
