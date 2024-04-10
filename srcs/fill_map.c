@@ -51,7 +51,7 @@ char	*str_join_map(char *src, char *map_buf, t_map *map)
 	return (temp);
 }
 
-void	ft_fill_map(int fd, t_map *map)
+static void	ft_fill_map(int fd, t_map *map)
 {
 	size_t	bytes;
 	char	map_buf[1025];

@@ -13,14 +13,14 @@ typedef struct s_map
 }		t_map;
 
 
-/*-----------PARSE------------*/
+/*----------FILL_MAP---------*/
 void	ft_parse_the_map(char *argv, t_map *map);
+char	*str_join_map(char *src, char *map_buf, t_map *map);
 
 /*-------MAP_CHECKER----------*/
-void	ft_map_validator(t_map *map);
+void	ft_check_map(t_map *map);
 
 /*-------MAP_GENERATOR--------*/
-void	map_generator(t_map *map);
 
 /*-----------EXIT-------------*/
 void	ft_exit(t_map *map, char *msg);

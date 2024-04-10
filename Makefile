@@ -13,6 +13,7 @@
 SRCS	=	so_long.c		\
 			exit.c			\
 			fill_map.c			\
+			map_checker.c
 
 OBJS	=	${SRCS:%.c=${OBJ_D}%.o}
 
