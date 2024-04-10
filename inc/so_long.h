@@ -7,15 +7,14 @@
 
 typedef struct s_map
 {
-	int		fd;
 	int		x;
 	int 	y;
-	char	*map;
+	char	**map;
 }		t_map;
 
 
 /*-----------PARSE------------*/
-void	ft_parse_the_map(char *argv);
+void	ft_parse_the_map(char *argv, t_map *map);
 
 /*-------MAP_CHECKER----------*/
 void	ft_map_validator(t_map *map);

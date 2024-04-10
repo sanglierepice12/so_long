@@ -3,26 +3,26 @@
 /*                                                        :::      ::::::::   */
 /*   exit.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: gsuter <gsuter@student.42lyon.fr>          +#+  +:+       +#+        */
+/*   By: gostr <gostr@student.1337.ma>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/04/10 13:19:33 by gsuter            #+#    #+#             */
-/*   Updated: 2024/04/10 13:19:33 by gsuter           ###   ########.fr       */
+/*   Created: 2024/04/08 18:02:10 by gostr             #+#    #+#             */
+/*   Updated: 2024/04/08 18:02:10 by gostr            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../inc/so_long.h"
 
-void	ft_free(t_map *map)
+void	ft_free_things(t_map *map)
 {
 	if (map->map)
-		ft_free_tab(map->map);
+		free(map->map);
 	free(map);
 }
 
 void	ft_exit(t_map *map, char *msg)
 {
 	if (map)
-		ft_free(map);
+		ft_free_things(map);
 	ft_putstr_fd(msg, 2);
 	exit(EXIT_FAILURE);
 }

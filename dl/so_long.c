@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   so_long.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: gsuter <gsuter@student.42lyon.fr>          +#+  +:+       +#+        */
+/*   By: gostr <gostr@student.1337.ma>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/04/10 13:17:18 by gsuter            #+#    #+#             */
-/*   Updated: 2024/04/10 13:17:18 by gsuter           ###   ########.fr       */
+/*   Created: 2024/04/04 14:49:23 by gostr             #+#    #+#             */
+/*   Updated: 2024/04/04 14:50:32 by gostr            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,14 +14,8 @@
 
 int	main(int arc, char **argv)
 {
-	t_map	*map;
-
 	if (arc != 2)
-		ft_exit(NULL, "Error: Not enough args. \n");
-	map = ft_calloc(1, sizeof(t_map));
-	if (!map)
-		ft_exit(NULL, "Error: Calloc crash.\n");
-	ft_parse_the_map(argv[1], map);
-	ft_check_map(map);
-	ft_exit(map, "lets go\n");
+		return (ft_putstr_fd("Error: arguments", 2), EXIT_FAILURE);
+	ft_parse_the_map(argv[1]);
+	return (EXIT_SUCCESS);
 }

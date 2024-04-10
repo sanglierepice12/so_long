@@ -26,22 +26,6 @@ void	ft_check_wall(char *line, t_map *map)
 	(void)map;
 }
 
-void	map_len_y(t_map *map)
-{
-	int		i;
-	char	*line;
-	i = 0;
-	while (1)
-	{
-		line = gnl(map->fd);
-		if (!line)
-			break ;
-		free(line);
-		i++;
-	}
-	map->y = i;
-}
-
 void	map_len_x_check(t_map *map)
 {
 	char	*line;
@@ -70,8 +54,7 @@ void	map_len_x_check(t_map *map)
 
 void	ft_map_validator(t_map *map)
 {
-	map_len_x_check(map);
-	map_len_y(map);
 	map_generator(map);
+	map_len_x_check(map);
 	//check inside map
 }

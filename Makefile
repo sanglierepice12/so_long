@@ -10,10 +10,10 @@
 #                                                                              #
 # **************************************************************************** #
 
-SRCS	=	so_long.c	\
-			check.c		\
-			exit.c		\
-			map_validor.c
+SRCS	=	so_long.c		\
+			exit.c			\
+			fill_map.c			\
+
 OBJS	=	${SRCS:%.c=${OBJ_D}%.o}
 
 SRC_D	=	srcs/

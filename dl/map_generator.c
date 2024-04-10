@@ -14,5 +14,5 @@
 
 void	map_generator(t_map *map)
 {
-
+	init_list(0);
 }
