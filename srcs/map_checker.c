@@ -25,6 +25,7 @@ static void	ft_check_len(t_map *map)
 			ft_exit(map, "Error: Map is not at the good len. [map_checker]\n");
 		i++;
 	}
+	map->len = i;
 }
 
 static size_t	ft_map_len_check_side(char **str, t_map *map)
@@ -37,10 +38,7 @@ static size_t	ft_map_len_check_side(char **str, t_map *map)
 	{
 		j = ft_strlen(str[0]) - 1;
 		if (str[i][0] != '1' || str[i][j] != '1')
-		{
-			printf("hihi = %c :", str[i][j]);
 			ft_exit(map, "Error: Miss a wall, go back to work !\n");
-		}
 		while (str[i][j])
 		{
 			if ((str[i][j] != 'E') && (str[i][j] != 'P') && (str[i][j] != 'C'))
@@ -78,7 +76,7 @@ void	ft_check_wall(t_map *map)
 	free(map_z);
 }
 
-void	ft_check_token(t_map *map)
+void	ft_check_token(t_map *map, int flag)
 {
 	ssize_t	i;
 	ssize_t	j;
@@ -102,13 +100,13 @@ void	ft_check_token(t_map *map)
 				token[2] += 1;
 		}
 	}
-	ft_check_token_is_good(map, token[0],token[1],token[2]);
+	ft_check_token_is_good(map, token, flag);
 }
 
 void	ft_check_map(t_map *map)
 {
 	ft_check_len(map);
 	ft_check_wall(map);
-	ft_check_token(map);
-	ft_map_is_available(map->map, map);
+	ft_check_token(map, 0);
+	ft_map_is_available(map);
 }
