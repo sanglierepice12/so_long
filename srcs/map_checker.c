@@ -100,7 +100,7 @@ void	ft_check_token(t_map *map, int flag)
 				token[2] += 1;
 		}
 	}
-	ft_check_token_is_good(map, token, flag);
+	ft_check_token_is_good(map, token[0], token[1], token[2], flag);
 }
 
 void	ft_check_map(t_map *map)
@@ -108,5 +108,5 @@ void	ft_check_map(t_map *map)
 	ft_check_len(map);
 	ft_check_wall(map);
 	ft_check_token(map, 0);
-	ft_map_is_available(map);
+	//ft_map_is_available(map);
 }

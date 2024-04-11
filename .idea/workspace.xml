@@ -18,11 +18,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8323335c-7c2d-4891-8c3f-95a1ac8a54c6" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inc/so_long.h" beforeDir="false" afterPath="$PROJECT_DIR$/inc/so_long.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srcs/check_map_part_two.c" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/check_map_part_two.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srcs/map_checker.c" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/map_checker.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srcs/map_credibility.c" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/map_credibility.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,7 +126,7 @@
       <workItem from="1712667326710" duration="3162000" />
       <workItem from="1712670559301" duration="2476000" />
       <workItem from="1712739296834" duration="16396000" />
-      <workItem from="1712821922901" duration="9487000" />
+      <workItem from="1712821922901" duration="9793000" />
     </task>
     <servers />
   </component>
