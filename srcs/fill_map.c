@@ -33,7 +33,6 @@ char	*str_join_map(char *src, char *map_buf, t_map *map)
 	size_t	len;
 	int		i;
 
-	len = 0;
 	len = ft_strlen(src) + ft_strlen(map_buf);
 	temp = ft_calloc(len + 1, sizeof(char));
 	if (!temp)
@@ -70,6 +69,8 @@ static void	ft_fill_map(int fd, t_map *map)
 	while (bytes == 1024)
 	{
 		bytes = read(fd, map_buf, bytes);
+		if (bytes <= 0)
+			ft_exit(map, "Error: Problem reading file. [fill]\n");
 		map_buf[bytes] = '\0';
 		map_gen = str_join_map(map_gen, map_buf, map);
 		i += bytes;
@@ -77,6 +78,7 @@ static void	ft_fill_map(int fd, t_map *map)
 			ft_exit(map, "Nothing in the map, go back to work ! [fill]\n");
 	}
 	map->map = ft_split(map_gen, '\n');
+	map->clone_map = ft_split(map_gen, '\n');
 	free(map_gen);
 }
 

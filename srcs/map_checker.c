@@ -38,7 +38,7 @@ static size_t	ft_map_len_check_side(char **str, t_map *map)
 		j = ft_strlen(str[0]) - 1;
 		if (str[i][0] != '1' || str[i][j] != '1')
 			ft_exit(map, "Error: Miss a wall, go back to work !\n");
-		while (str[i][j])
+		while (str[i][j + 1])
 		{
 			if ((str[i][j] != 'E') && (str[i][j] != 'P') && (str[i][j] != 'C'))
 				if ((str[i][j] != '1') && (str[i][j] != '0'))
@@ -78,7 +78,7 @@ void	ft_check_wall(t_map *map)
 	free(map_z);
 }
 
-void	ft_check_token(t_map *map, int flag)
+/*void	ft_check_token(t_map *map, int flag)
 {
 	ssize_t	i;
 	ssize_t	j;
@@ -103,12 +103,40 @@ void	ft_check_token(t_map *map, int flag)
 		}
 	}
 	ft_check_token_is_good(map, token[0],token[1],token[2], flag);
+}*/
+
+void	ft_check_token(char **mapper, t_map *map, int flag)
+{
+	ssize_t	i;
+	ssize_t	j;
+	int		token[3];
+
+	ft_bzero(token, sizeof(token));
+	i = -1;
+	while (mapper[++i])
+	{
+		j = -1;
+		while (mapper[i][++j])
+		{
+			if (mapper[i][j] == 'E')
+				token[0] += 1;
+			if (mapper[i][j] == 'P')
+			{
+				token[1] += 1;
+				if (flag == 0)
+					ft_find_player_pos(map, j, i);
+			}
+			if (mapper[i][j] == 'C')
+				token[2] += 1;
+		}
+	}
+	ft_check_token_good(map, token, flag);
 }
 
 void	ft_check_map(t_map *map)
 {
 	ft_check_len(map);
 	ft_check_wall(map);
-	ft_check_token(map, 0);
+	ft_check_token(map->map, map, 0);
 	ft_map_is_available(map);
 }

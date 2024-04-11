@@ -16,6 +16,8 @@ void	ft_free_things(t_map *map)
 {
 	if (map->map)
 		ft_free_tab(map->map);
+	if (map->clone_map)
+		ft_free_tab(map->clone_map);
 	free(map);
 }
 
