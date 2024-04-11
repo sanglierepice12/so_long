@@ -30,14 +30,24 @@ static void	ft_check_len(t_map *map)
 static size_t	ft_map_len_check_side(char **str, t_map *map)
 {
 	size_t	i;
-	size_t	j;
+	ssize_t	j;
 
-	j = ft_strlen(str[0]);
 	i = 0;
 	while (str[i])
 	{
-		if (str[i][0] != '1' || str[i][j - 1] != '1')
+		j = ft_strlen(str[0]) - 1;
+		if (str[i][0] != '1' || str[i][j] != '1')
+		{
+			printf("hihi = %c :", str[i][j]);
 			ft_exit(map, "Error: Miss a wall, go back to work !\n");
+		}
+		while (str[i][j])
+		{
+			if ((str[i][j] != 'E') && (str[i][j] != 'P') && (str[i][j] != 'C'))
+				if ((str[i][j] != '1') && (str[i][j] != '0'))
+					ft_exit(map, "Error: Something looks not in the plan.\n");
+			j--;
+		}
 		i++;
 	}
 	return (i);
@@ -51,9 +61,9 @@ void	ft_check_wall(t_map *map)
 	char	*map_e;
 
 	i = 0;
-	y = ft_map_len_check_side(map->map, map);
+	y = ft_map_len_check_side(map->map, map) - 1;
 	map_z = ft_strdup(map->map[0]);
-	map_e = ft_strdup(map->map[y - 1]);
+	map_e = ft_strdup(map->map[y]);
 	while (map_z[i] && map_e[i])
 	{
 		if (map_z[i] != '1' || map_e[i] != '1')
@@ -70,35 +80,29 @@ void	ft_check_wall(t_map *map)
 
 void	ft_check_token(t_map *map)
 {
-	size_t	i;
-	size_t	j;
+	ssize_t	i;
+	ssize_t	j;
 	int		token[3];
 
-	token[0] = 0;
-	token[1] = 0;
-	token[2] = 0;
-	i = 0;
-	while (map->map[i])
+	ft_bzero(token, sizeof(token));
+	i = -1;
+	while (map->map[++i])
 	{
-		j = 0;
-		while (map->map[i][j])
+		j = -1;
+		while (map->map[i][++j])
 		{
 			if (map->map[i][j] == 'E')
 				token[0] += 1;
 			if (map->map[i][j] == 'P')
+			{
 				token[1] += 1;
+				ft_find_player_pos(map, j, i);
+			}
 			if (map->map[i][j] == 'C')
 				token[2] += 1;
-			j++;
 		}
-		i++;
 	}
-	if (token[0] != 1)
-		ft_exit(map, "Error: To much exit, destroy one. [map_check]\n");
-	if (token[1] != 1)
-		ft_exit(map, "Error: Wrong number of players, kill one. [map_check]\n");
-	if (token[0] == 0)
-		ft_exit(map, "Error: Not enough coins, go make cash. [map_check]\n");
+	ft_check_token_is_good(map, token[0],token[1],token[2]);
 }
 
 void	ft_check_map(t_map *map)
@@ -106,4 +110,5 @@ void	ft_check_map(t_map *map)
 	ft_check_len(map);
 	ft_check_wall(map);
 	ft_check_token(map);
+	ft_map_is_available(map->map, map);
 }

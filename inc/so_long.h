@@ -7,8 +7,8 @@
 
 typedef struct s_map
 {
-	int		x;
-	int 	y;
+	size_t	x;
+	size_t	y;
 	char	**map;
 }		t_map;
 
@@ -19,8 +19,10 @@ char	*str_join_map(char *src, char *map_buf, t_map *map);
 
 /*-------MAP_CHECKER----------*/
 void	ft_check_map(t_map *map);
-
-/*-------MAP_GENERATOR--------*/
+void	ft_find_player_pos(t_map *map, int x, int y);
+void	ft_check_token_is_good(t_map *map, int E, int P, int C);
+/*-------MAP_VALIDITY----------*/
+void	ft_map_is_available(char **str, t_map *map);
 
 /*-----------EXIT-------------*/
 void	ft_exit(t_map *map, char *msg);
