@@ -12,6 +12,7 @@
 
 #include "../inc/so_long.h"
 
+/*
 static void	ft_map_filler(char **map, size_t x, size_t y)
 {
 	if (map[x][y] != '1' && map[x][y] != 'O')
@@ -23,6 +24,7 @@ static void	ft_map_filler(char **map, size_t x, size_t y)
 		ft_map_filler(map, x, y + 1);
 	}
 }
+*/
 
 char	**ft_clone_map(t_map *map)
 {
@@ -50,6 +52,6 @@ void	ft_map_is_available(t_map *map)
 	clone_map = ft_clone_map(map);
 	if (!clone_map)
 		ft_exit(map, "Error: dup_clone crash [map_cred]");
-	ft_map_filler(clone_map, map->x, map->y);
+	//ft_map_filler(clone_map, map->x, map->y);
 	ft_check_token(map, 1);
 }

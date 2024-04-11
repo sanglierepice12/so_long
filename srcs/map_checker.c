@@ -25,7 +25,6 @@ static void	ft_check_len(t_map *map)
 			ft_exit(map, "Error: Map is not at the good len. [map_checker]\n");
 		i++;
 	}
-	map->len = i;
 }
 
 static size_t	ft_map_len_check_side(char **str, t_map *map)
@@ -53,15 +52,18 @@ static size_t	ft_map_len_check_side(char **str, t_map *map)
 
 void	ft_check_wall(t_map *map)
 {
-	size_t	y;
 	size_t	i;
 	char	*map_z;
 	char	*map_e;
 
 	i = 0;
-	y = ft_map_len_check_side(map->map, map) - 1;
+	map->len = ft_map_len_check_side(map->map, map) - 1;
 	map_z = ft_strdup(map->map[0]);
-	map_e = ft_strdup(map->map[y]);
+	if (!map_z)
+		ft_exit(map, "Error: Calloc crash [map_check]\n");
+	map_e = ft_strdup(map->map[map->len]);
+	if (!map_e)
+		ft_exit(map, "Error: Calloc crash [map_check]\n");
 	while (map_z[i] && map_e[i])
 	{
 		if (map_z[i] != '1' || map_e[i] != '1')
@@ -100,7 +102,7 @@ void	ft_check_token(t_map *map, int flag)
 				token[2] += 1;
 		}
 	}
-	ft_check_token_is_good(map, token[0], token[1], token[2], flag);
+	ft_check_token_is_good(map, token[0],token[1],token[2], flag);
 }
 
 void	ft_check_map(t_map *map)
@@ -108,5 +110,5 @@ void	ft_check_map(t_map *map)
 	ft_check_len(map);
 	ft_check_wall(map);
 	ft_check_token(map, 0);
-	//ft_map_is_available(map);
+	ft_map_is_available(map);
 }

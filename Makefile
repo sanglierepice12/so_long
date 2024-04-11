@@ -27,7 +27,7 @@ NAME	=	so_long
 
 CC		=	cc
 
-CFLAGS	=	-Wall -Wextra -Werror -Iincludes -g3 -fsanitize=address
+CFLAGS	=	-Wall -Wextra -Werror -Iincludes -g3
 
 HEADER	=	so_long.h
 
