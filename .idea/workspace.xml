@@ -9,6 +9,7 @@
       <config projectName="so_long" targetName="fclean" />
       <config projectName="so_long" targetName="re" />
       <config projectName="so_long" targetName="all" />
+      <config projectName="so_long" targetName="objs" />
     </generated>
   </component>
   <component name="CMakeSettings">
@@ -18,65 +19,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8323335c-7c2d-4891-8c3f-95a1ac8a54c6" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/coucou.ber" beforeDir="false" afterPath="$PROJECT_DIR$/coucou.ber" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dl/check.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dl/exit.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dl/map_generator.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dl/map_validor.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dl/so_long.c" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/inc/so_long.h" beforeDir="false" afterPath="$PROJECT_DIR$/inc/so_long.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/libft.a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/objs/ft_atoi.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/objs/ft_bzero.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/objs/ft_calloc.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/objs/ft_isalnum.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/objs/ft_isalpha.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/objs/ft_isascii.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/objs/ft_isdigit.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/objs/ft_isprint.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/objs/ft_itoa.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/objs/ft_memchr.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/objs/ft_memcmp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/objs/ft_memcpy.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/objs/ft_memmove.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/objs/ft_memset.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/objs/ft_printf.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/objs/ft_printf_utils.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/objs/ft_putchar_fd.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/objs/ft_putendl_fd.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/objs/ft_putnbr_fd.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/objs/ft_putstr_fd.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/objs/ft_split.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/objs/ft_strchr.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/objs/ft_strdup.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/objs/ft_striteri.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/objs/ft_strjoin.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/objs/ft_strlcat.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/objs/ft_strlcpy.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/objs/ft_strlen.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/objs/ft_strmapi.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/objs/ft_strncmp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/objs/ft_strnstr.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/objs/ft_strrchr.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/objs/ft_strtrim.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/objs/ft_substr.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/objs/ft_tolower.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/objs/ft_toupper.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/objs/gnl.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/objs/gnl_utils.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/objs/check_map_part_two.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/objs/exit.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/objs/fill_map.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/objs/map_checker.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/objs/map_credibility.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/objs/so_long.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/so_long" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/srcs/check_map_part_two.c" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/check_map_part_two.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srcs/exit.c" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/exit.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srcs/fill_map.c" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/fill_map.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srcs/map_checker.c" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/map_checker.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/srcs/map_credibility.c" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/map_credibility.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs/so_long.c" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/so_long.c" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -153,12 +101,22 @@
   }
 }</component>
   <component name="RunManager" selected="Native Application.all">
+    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="all" type="CLionNativeAppRunConfigurationType" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="so_long" TARGET_NAME="all" CONFIG_NAME="all" version="1">
       <method v="2">
         <option name="CLION.COMPOUND.BUILD" enabled="true" />
       </method>
     </configuration>
     <configuration name="fclean" type="CLionNativeAppRunConfigurationType" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="so_long" TARGET_NAME="fclean" CONFIG_NAME="fclean" version="1">
+      <method v="2">
+        <option name="CLION.COMPOUND.BUILD" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="objs" type="CLionNativeAppRunConfigurationType" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="so_long" TARGET_NAME="objs" CONFIG_NAME="objs" version="1">
       <method v="2">
         <option name="CLION.COMPOUND.BUILD" enabled="true" />
       </method>
@@ -177,6 +135,7 @@
       <item itemvalue="Native Application.all" />
       <item itemvalue="Native Application.fclean" />
       <item itemvalue="Native Application.re" />
+      <item itemvalue="Native Application.objs" />
       <item itemvalue="Native Application.so_long" />
     </list>
   </component>
@@ -198,7 +157,8 @@
       <workItem from="1712664743102" duration="2541000" />
       <workItem from="1712667326710" duration="3162000" />
       <workItem from="1712670559301" duration="7279000" />
-      <workItem from="1712841541098" duration="6150000" />
+      <workItem from="1712841541098" duration="7088000" />
+      <workItem from="1712910204545" duration="5669000" />
     </task>
     <servers />
   </component>

@@ -4,6 +4,8 @@
 # include "../mlx_linux/mlx.h"
 # include "../mlx_linux/mlx_int.h"
 # include "../libft/incs/libft.h"
+# include <X11/X.h>
+# include <X11/keysym.h>
 # include <fcntl.h>
 
 typedef struct s_map
@@ -14,6 +16,12 @@ typedef struct s_map
 	char	**map;
 	char	**clone_map;
 }		t_map;
+
+typedef struct s_mlx
+{
+	void	*mlx;
+	void	*win;
+}	t_mlx;
 
 
 /*----------FILL_MAP---------*/
@@ -32,6 +40,5 @@ void	ft_map_is_available(t_map *map);
 /*-----------EXIT-------------*/
 void	ft_exit(t_map *map, char *msg);
 void	ft_free_things(t_map *map);
-
 
 #endif
