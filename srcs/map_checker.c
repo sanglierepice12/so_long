@@ -38,13 +38,6 @@ static size_t	ft_map_len_check_side(char **str, t_map *map)
 		j = ft_strlen(str[0]) - 1;
 		if (str[i][0] != '1' || str[i][j] != '1')
 			ft_exit(map, "Error: Miss a wall, go back to work !\n");
-		/*while (str[i][j])
-		{
-			if ((str[i][j] != 'E') && (str[i][j] != 'P') && (str[i][j] != 'C'))
-				if ((str[i][j] != '1') && (str[i][j] != '0'))
-					ft_exit(map, "Error: Something looks not in the plan.\n");
-			j--;
-		}*/
 		i++;
 	}
 	return (i);

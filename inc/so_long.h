@@ -23,6 +23,8 @@ typedef struct s_mlx
 {
 	void	*mlx;
 	void	*win;
+	t_map	map;
+/*	char	**hou;*/
 }	t_mlx;
 
 
@@ -42,10 +44,11 @@ void	ft_clone_map(t_map *map);
 void	ft_map_is_available(t_map *map);
 
 /*-----------MLX---------------*/
-void	ft_start_mini(t_map *map);
+void	ft_start_mini();
 
 /*-----------EXIT-------------*/
 void	ft_exit(t_map *map, char *msg);
-void	ft_free_things(t_map *map);
+void	ft_free_map(t_map *map);
+void	ft_exit_success(t_mlx *data, char *msg);
 
 #endif

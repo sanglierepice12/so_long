@@ -12,37 +12,55 @@
 
 #include "../inc/so_long.h"
 
-int	key_hook(int keycode, t_mlx *data)
+int	handle_key(int keycode, t_mlx *data)
 {
-	printf("Hello from key_hook!\n");
-	printf("keycode = %d\n", keycode);
 	if (keycode == 102)
-	{
-		mlx_destroy_display(data->mlx);
-		mlx_destroy_window(data->mlx, data->win);
-		free(data->mlx);
-		exit(0);
-	}
-	return (0);
+		ft_exit_success(data, "Bisous.\n");
+	return 0;
 }
 
-void	ft_start_mini(t_map *map)
+/*size_t	ft_double_strlen(char **str)
+{
+	size_t	i;
+
+	i = 0;
+	while (str[i])
+		i++;
+	return (i);
+}
+
+char	**double_dup(char **str)
+{
+	size_t	i;
+	char	**dup;
+
+	dup = ft_calloc(ft_double_strlen(str), sizeof(char *));
+	if (!dup)
+		return (NULL);
+	i = 0;
+	while (str[i])
+	{
+		dup[i] = ft_strdup(str[i]);
+		i++;
+	}
+	return (dup);
+}*/
+
+void	ft_start_mini()
 {
 	t_mlx	data;
 
+/*	data.hou = double_dup(map->map);
+	printf("str = %s\n", data.hou[0]);
+	ft_free_map(map);
+	ft_free_tab(data.hou);
+	exit(0);*/
 	data.mlx = mlx_init();
 	if (!data.mlx)
-		ft_exit(map, "Error: mlx failed.\n");
-	data.win = mlx_new_window(data.mlx, 800, 800,"So long baybe");
+		exit(0);
+	data.win = mlx_new_window(data.mlx, 800, 800, "so fk long");
 	if (!data.win)
-	{
-		mlx_destroy_display(data.mlx);
-		free(data.mlx);
-		ft_exit(map, "Error: mlx window failed.\n");
-	}
-	mlx_key_hook(data.win, key_hook, &data);
+		exit(0);
+	mlx_hook(data.win, 2, 1L<<0, handle_key, &data);
 	mlx_loop(data.mlx);
-	mlx_destroy_display(data.mlx);
-	mlx_destroy_window(data.mlx, data.win);
-	free(data.mlx);
 }

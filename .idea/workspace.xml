@@ -21,11 +21,18 @@
     <list default="true" id="8323335c-7c2d-4891-8c3f-95a1ac8a54c6" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coucou.ber" beforeDir="false" afterPath="$PROJECT_DIR$/coucou.ber" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/inc/so_long.h" beforeDir="false" afterPath="$PROJECT_DIR$/inc/so_long.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srcs/check_map_part_two.c" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/check_map_part_two.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/objs/check_map_part_two.o" beforeDir="false" afterPath="$PROJECT_DIR$/objs/check_map_part_two.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/objs/exit.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/objs/fill_map.o" beforeDir="false" afterPath="$PROJECT_DIR$/objs/fill_map.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/objs/map_checker.o" beforeDir="false" afterPath="$PROJECT_DIR$/objs/map_checker.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/objs/map_credibility.o" beforeDir="false" afterPath="$PROJECT_DIR$/objs/map_credibility.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/objs/mini.o" beforeDir="false" afterPath="$PROJECT_DIR$/objs/mini.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/objs/so_long.o" beforeDir="false" afterPath="$PROJECT_DIR$/objs/so_long.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/so_long" beforeDir="false" afterPath="$PROJECT_DIR$/so_long" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs/exit.c" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/exit.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/srcs/map_checker.c" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/map_checker.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srcs/map_credibility.c" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/map_credibility.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs/mini.c" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/mini.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/srcs/so_long.c" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/so_long.c" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -84,25 +91,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
-    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/gsuter/Documents/gonz_42/sofulong&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "RunOnceActivity.readMode.enableVisualFormatting": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/home/gsuter/Documents/gonz_42/sofulong",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "structure.view.defaults.are.configured": "true",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Makefile Application.all">
     <configuration name="all" type="CLionNativeAppRunConfigurationType" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="so_long" TARGET_NAME="all" CONFIG_NAME="all" version="1">
       <method v="2">
@@ -158,7 +166,7 @@
       <workItem from="1712841541098" duration="7088000" />
       <workItem from="1712910204545" duration="5669000" />
       <workItem from="1713342951378" duration="472000" />
-      <workItem from="1713345382744" duration="7004000" />
+      <workItem from="1713345382744" duration="15856000" />
     </task>
     <servers />
   </component>
