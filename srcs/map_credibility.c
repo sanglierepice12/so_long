@@ -29,5 +29,4 @@ void	ft_map_is_available(t_map *map)
 {
 	map->clone_map = ft_map_filler(map->clone_map, map->y, map->x, map);
 	ft_check_token(map->clone_map, map, 1);
-	printf("map %s\n", map->clone_map[0]);
 }

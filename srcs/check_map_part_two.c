@@ -30,3 +30,23 @@ void	ft_check_token_good(t_map *map, int token[3], int flag)
 		if (token[0] != 0 || token[1] != 0 || token[2] != 0)
 			ft_exit(map, "Error: Cannot go to the exit [map_check]\n");
 }
+
+void	check_invalid_element(char **str, t_map *map)
+{
+	size_t	i;
+	size_t	j;
+
+	i = 0;
+	while (str[i])
+	{
+		j = 0;
+		while (str[i][j])
+		{
+			if ((str[i][j] != 'E') && (str[i][j] != 'P') && (str[i][j] != 'C'))
+				if ((str[i][j] != '1') && (str[i][j] != '0'))
+					ft_exit(map, "Error: Something looks not in the plan.\n");
+			j++;
+		}
+		i++;
+	}
+}

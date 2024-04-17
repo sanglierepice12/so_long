@@ -10,12 +10,13 @@
 #                                                                              #
 # **************************************************************************** #
 
-SRCS	=	so_long.c			\
-			exit.c				\
-			fill_map.c			\
-			map_checker.c		\
-			check_map_part_two.c \
-			map_credibility.c
+SRCS	=	so_long.c				\
+			exit.c					\
+			fill_map.c				\
+			map_checker.c			\
+			check_map_part_two.c	\
+			map_credibility.c		\
+			mini.c
 
 OBJS	=	${SRCS:%.c=${OBJ_D}%.o}
 

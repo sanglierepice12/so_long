@@ -19,10 +19,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8323335c-7c2d-4891-8c3f-95a1ac8a54c6" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/coucou.ber" beforeDir="false" afterPath="$PROJECT_DIR$/coucou.ber" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/inc/so_long.h" beforeDir="false" afterPath="$PROJECT_DIR$/inc/so_long.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs/check_map_part_two.c" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/check_map_part_two.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs/map_checker.c" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/map_checker.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/srcs/map_credibility.c" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/map_credibility.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/srcs/so_long.c" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/so_long.c" afterDir="false" />
     </list>
@@ -88,10 +90,11 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
     &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/gostr/valgrind_42/42/so_long&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/gsuter/Documents/gonz_42/sofulong&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -100,12 +103,7 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Native Application.all">
-    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Makefile Application.all">
     <configuration name="all" type="CLionNativeAppRunConfigurationType" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="so_long" TARGET_NAME="all" CONFIG_NAME="all" version="1">
       <method v="2">
         <option name="CLION.COMPOUND.BUILD" enabled="true" />
@@ -132,11 +130,11 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Native Application.all" />
-      <item itemvalue="Native Application.fclean" />
-      <item itemvalue="Native Application.re" />
-      <item itemvalue="Native Application.objs" />
-      <item itemvalue="Native Application.so_long" />
+      <item itemvalue="Makefile Application.all" />
+      <item itemvalue="Makefile Application.fclean" />
+      <item itemvalue="Makefile Application.objs" />
+      <item itemvalue="Makefile Application.re" />
+      <item itemvalue="Makefile Application.so_long" />
     </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -159,6 +157,8 @@
       <workItem from="1712670559301" duration="7279000" />
       <workItem from="1712841541098" duration="7088000" />
       <workItem from="1712910204545" duration="5669000" />
+      <workItem from="1713342951378" duration="472000" />
+      <workItem from="1713345382744" duration="7004000" />
     </task>
     <servers />
   </component>

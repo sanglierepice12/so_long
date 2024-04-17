@@ -38,13 +38,13 @@ static size_t	ft_map_len_check_side(char **str, t_map *map)
 		j = ft_strlen(str[0]) - 1;
 		if (str[i][0] != '1' || str[i][j] != '1')
 			ft_exit(map, "Error: Miss a wall, go back to work !\n");
-		while (str[i][j + 1])
+		/*while (str[i][j])
 		{
 			if ((str[i][j] != 'E') && (str[i][j] != 'P') && (str[i][j] != 'C'))
 				if ((str[i][j] != '1') && (str[i][j] != '0'))
 					ft_exit(map, "Error: Something looks not in the plan.\n");
 			j--;
-		}
+		}*/
 		i++;
 	}
 	return (i);
@@ -58,6 +58,7 @@ void	ft_check_wall(t_map *map)
 
 	i = 0;
 	map->len = ft_map_len_check_side(map->map, map) - 1;
+	check_invalid_element(map->map, map);
 	map_z = ft_strdup(map->map[0]);
 	if (!map_z)
 		ft_exit(map, "Error: Calloc crash [map_check]\n");
@@ -77,33 +78,6 @@ void	ft_check_wall(t_map *map)
 	free(map_e);
 	free(map_z);
 }
-
-/*void	ft_check_token(t_map *map, int flag)
-{
-	ssize_t	i;
-	ssize_t	j;
-	int		token[3];
-
-	ft_bzero(token, sizeof(token));
-	i = -1;
-	while (map->map[++i])
-	{
-		j = -1;
-		while (map->map[i][++j])
-		{
-			if (map->map[i][j] == 'E')
-				token[0] += 1;
-			if (map->map[i][j] == 'P')
-			{
-				token[1] += 1;
-				ft_find_player_pos(map, j, i);
-			}
-			if (map->map[i][j] == 'C')
-				token[2] += 1;
-		}
-	}
-	ft_check_token_is_good(map, token[0],token[1],token[2], flag);
-}*/
 
 void	ft_check_token(char **mapper, t_map *map, int flag)
 {
