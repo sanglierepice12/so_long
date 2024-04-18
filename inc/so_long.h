@@ -1,13 +1,23 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   so_long.h                                          :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: gsuter <gsuter@student.42lyon.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/04/18 15:41:44 by gsuter            #+#    #+#             */
+/*   Updated: 2024/04/18 15:41:44 by gsuter           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #ifndef SO_LONG_H
 # define SO_LONG_H
 
 # include "../mlx_linux/mlx.h"
 # include "../mlx_linux/mlx_int.h"
 # include "../libft/incs/libft.h"
-/*# include <X11/X.h>
-# include <X11/keysym.h>*/
-#include <X11/X.h>
-#include <X11/keysym.h>
+# include <X11/X.h>
+# include <X11/keysym.h>
 # include <fcntl.h>
 
 typedef struct s_map
@@ -22,18 +32,35 @@ typedef struct s_map
 	char	**clone_map;
 }		t_map;
 
+typedef struct s_background
+{
+	void	*img;
+	int		height;
+	int		width;
+}		t_background;
+
+typedef struct s_player
+{
+	void	*img;
+	int		height;
+	int		width;
+}		t_player;
+
 typedef struct s_mlx
 {
 	void	*mlx;
 	void	*win;
-}	t_mlx;
+}		t_mlx;
 
 typedef struct s_glob
 {
-	t_map	map;
-	t_mlx	data;
-}  t_glob;
-
+	size_t	i;
+	size_t j;
+	t_map			map;
+	t_mlx			data;
+	t_player		player;
+	t_background	background;
+}		t_glob;
 
 /*----------FILL_MAP---------*/
 void	ft_parse_the_map(char *argv, t_map *map);
@@ -51,7 +78,9 @@ void	ft_clone_map(t_map *map);
 void	ft_map_is_available(t_map *map);
 
 /*-----------MLX---------------*/
-void	ft_start_mini(t_glob glob);
+void	ft_start_mini(t_glob *glob);
+/*-----------MLX_IMG-----------*/
+void	ft_load_img(t_glob *glob);
 
 /*-----------EXIT-------------*/
 void	ft_free_map(t_map *map);

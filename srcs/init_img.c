@@ -1,25 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   so_long.c                                          :+:      :+:    :+:   */
+/*   init_img.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gsuter <gsuter@student.42lyon.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/04/10 13:17:18 by gsuter            #+#    #+#             */
-/*   Updated: 2024/04/10 13:17:18 by gsuter           ###   ########.fr       */
+/*   Created: 2024/04/18 15:36:02 by gsuter            #+#    #+#             */
+/*   Updated: 2024/04/18 15:36:02 by gsuter           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../inc/so_long.h"
 
-int	main(int arc, char **argv)
+void	ft_load_img(t_glob *glob)
 {
-	t_glob	glob;
-
-	if (arc != 2)
-		ft_exit(NULL, "Error: Not enough args. \n");
-	ft_parse_the_map(argv[1], &glob.map);
-	ft_check_map(&glob.map);
-	ft_start_mini(&glob);
-	ft_exit(&glob.map, "lets go\n");
+	(void)glob;
+	char *path = "assets/bg.xpm";
+	glob->background.height = 32;
+	glob->background.width = 32;
+	glob->background.img = mlx_xpm_file_to_image(glob->data.mlx, path, &glob->background.width, &glob->background.height);
 }

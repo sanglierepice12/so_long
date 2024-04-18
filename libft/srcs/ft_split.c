@@ -67,6 +67,8 @@ void	*ft_free_tab(char **split)
 	size_t	i;
 
 	i = 0;
+	if (!split)
+		return (NULL);
 	while (split[i] != NULL)
 	{
 		free(split[i]);

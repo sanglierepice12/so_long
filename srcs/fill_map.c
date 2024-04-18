@@ -54,6 +54,17 @@ char	*str_join_map(char *src, char *map_buf, t_map *map)
 	return (temp);
 }
 
+static void	ft_fill_map_following(t_map *map, char *map_gen)
+{
+	map->map = ft_split(map_gen, '\n');
+	if (!map->map)
+		ft_exit(map, "Error: split crash. [fill]\n");
+	map->clone_map = ft_split(map_gen, '\n');
+	if (!map->clone_map)
+		ft_exit(map, "Error: split crash. [fill]\n");
+	free(map_gen);
+}
+
 static void	ft_fill_map(int fd, t_map *map)
 {
 	size_t	bytes;
@@ -77,9 +88,7 @@ static void	ft_fill_map(int fd, t_map *map)
 		if (i == 0)
 			ft_exit(map, "Nothing in the map, go back to work ! [fill]\n");
 	}
-	map->map = ft_split(map_gen, '\n');
-	map->clone_map = ft_split(map_gen, '\n');
-	free(map_gen);
+	ft_fill_map_following(map, map_gen);
 }
 
 void	ft_parse_the_map(char *argv, t_map *map)

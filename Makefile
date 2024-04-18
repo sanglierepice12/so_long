@@ -16,7 +16,8 @@ SRCS	=	so_long.c				\
 			map_checker.c			\
 			check_map_part_two.c	\
 			map_credibility.c		\
-			mini.c
+			mini.c					\
+			init_img.c
 
 OBJS	=	${SRCS:%.c=${OBJ_D}%.o}
 
