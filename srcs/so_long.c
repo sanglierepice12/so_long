@@ -14,16 +14,12 @@
 
 int	main(int arc, char **argv)
 {
-	//t_map	*map;
-	t_mlx so_long;
+	t_glob	glob;
 
 	if (arc != 2)
 		ft_exit(NULL, "Error: Not enough args. \n");
-	/*map = ft_calloc(1, sizeof(t_map));
-	if (!map)
-		ft_exit(NULL, "Error: Calloc crash.\n");*/
-	ft_parse_the_map(argv[1], &so_long.map);
-	ft_check_map(&so_long.map);
-	ft_start_mini();
-	ft_exit(&so_long.map, "lets go\n");
+	ft_parse_the_map(argv[1], &glob.map);
+	ft_check_map(&glob.map);
+	ft_start_mini(&glob);
+	//ft_exit(&glob.map, "lets go\n");
 }

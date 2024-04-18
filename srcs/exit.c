@@ -18,7 +18,13 @@ void	ft_free_map(t_map *map)
 		ft_free_tab(map->map);
 	if (map->clone_map)
 		ft_free_tab(map->clone_map);
-	//free(map);
+}
+
+void	ft_destroy(t_mlx *data)
+{
+	mlx_destroy_window(data->mlx, data->win);
+	mlx_destroy_display(data->mlx);
+	free(data->mlx);
 }
 
 void	ft_exit(t_map *map, char *msg)
@@ -29,17 +35,10 @@ void	ft_exit(t_map *map, char *msg)
 	exit(EXIT_FAILURE);
 }
 
-void	ft_destroy(t_mlx *data)
+void	ft_exit_success(t_glob *glob, char *msg)
 {
-	ft_free_map(data->map);
-	mlx_destroy_window(data->mlx, data->win);
-	mlx_destroy_display(data->mlx);
-	free(data->mlx);
-}
-
-void	ft_exit_success(t_mlx *data, char *msg)
-{
-	ft_destroy(data);
+	ft_free_map(&glob->map);
+	ft_destroy(&glob->data);
 	ft_putstr_fd(msg, 1);
 	exit(EXIT_SUCCESS);
 }
