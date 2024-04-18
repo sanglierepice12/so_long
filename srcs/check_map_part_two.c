@@ -29,6 +29,9 @@ void	ft_check_token_good(t_map *map, int token[3], int flag)
 	if (flag == 1)
 		if (token[0] != 0 || token[1] != 0 || token[2] != 0)
 			ft_exit(map, "Error: Cannot go to the exit [map_check]\n");
+	map->np = token[1];
+	map->ne = token[0];
+	map->nc = token[2];
 }
 
 void	check_invalid_element(char **str, t_map *map)

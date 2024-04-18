@@ -15,6 +15,9 @@ typedef struct s_map
 	size_t	x;
 	size_t	y;
 	size_t	len;
+	size_t	np;
+	size_t	ne;
+	size_t	nc;
 	char	**map;
 	char	**clone_map;
 }		t_map;
@@ -48,11 +51,12 @@ void	ft_clone_map(t_map *map);
 void	ft_map_is_available(t_map *map);
 
 /*-----------MLX---------------*/
-void	ft_start_mini(t_glob *glob);
+void	ft_start_mini(t_glob glob);
 
 /*-----------EXIT-------------*/
-void	ft_exit(t_map *map, char *msg);
 void	ft_free_map(t_map *map);
-void	ft_exit_success(t_glob *glob, char *msg);
+void	ft_destroy(t_mlx *data);
+void	ft_exit(t_map *map, char *msg);
+void	ft_exit_success(t_glob *glob, char *msg, int flag);
 
 #endif

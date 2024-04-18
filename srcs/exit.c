@@ -35,10 +35,10 @@ void	ft_exit(t_map *map, char *msg)
 	exit(EXIT_FAILURE);
 }
 
-void	ft_exit_success(t_glob *glob, char *msg)
+void	ft_exit_success(t_glob *glob, char *msg, int flag)
 {
 	ft_free_map(&glob->map);
 	ft_destroy(&glob->data);
 	ft_putstr_fd(msg, 1);
-	exit(EXIT_SUCCESS);
+	exit(flag);
 }

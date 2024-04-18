@@ -21,52 +21,15 @@
     <list default="true" id="8323335c-7c2d-4891-8c3f-95a1ac8a54c6" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/inc/so_long.h" beforeDir="false" afterPath="$PROJECT_DIR$/inc/so_long.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/libft.a" beforeDir="false" afterPath="$PROJECT_DIR$/libft/libft.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/objs/ft_atoi.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/objs/ft_atoi.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/objs/ft_bzero.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/objs/ft_bzero.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/objs/ft_calloc.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/objs/ft_calloc.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/objs/ft_isalnum.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/objs/ft_isalnum.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/objs/ft_isalpha.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/objs/ft_isalpha.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/objs/ft_isascii.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/objs/ft_isascii.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/objs/ft_isdigit.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/objs/ft_isdigit.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/objs/ft_isprint.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/objs/ft_isprint.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/objs/ft_itoa.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/objs/ft_itoa.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/objs/ft_memchr.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/objs/ft_memchr.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/objs/ft_memcmp.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/objs/ft_memcmp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/objs/ft_memcpy.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/objs/ft_memcpy.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/objs/ft_memmove.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/objs/ft_memmove.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/objs/ft_memset.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/objs/ft_memset.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/objs/ft_printf.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/objs/ft_printf.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/objs/ft_printf_utils.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/objs/ft_printf_utils.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/objs/ft_putchar_fd.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/objs/ft_putchar_fd.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/objs/ft_putendl_fd.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/objs/ft_putendl_fd.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/objs/ft_putnbr_fd.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/objs/ft_putnbr_fd.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/objs/ft_putstr_fd.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/objs/ft_putstr_fd.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/objs/ft_split.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/objs/ft_split.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/objs/ft_strchr.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/objs/ft_strchr.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/objs/ft_strdup.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/objs/ft_strdup.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/objs/ft_striteri.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/objs/ft_striteri.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/objs/ft_strjoin.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/objs/ft_strjoin.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/objs/ft_strlcat.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/objs/ft_strlcat.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/objs/ft_strlcpy.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/objs/ft_strlcpy.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/objs/ft_strlen.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/objs/ft_strlen.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/objs/ft_strmapi.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/objs/ft_strmapi.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/objs/ft_strncmp.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/objs/ft_strncmp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/objs/ft_strnstr.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/objs/ft_strnstr.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/objs/ft_strrchr.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/objs/ft_strrchr.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/objs/ft_strtrim.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/objs/ft_strtrim.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/objs/ft_substr.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/objs/ft_substr.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/objs/ft_tolower.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/objs/ft_tolower.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/objs/ft_toupper.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/objs/ft_toupper.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/objs/gnl.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/objs/gnl.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/objs/gnl_utils.o" beforeDir="false" afterPath="$PROJECT_DIR$/libft/objs/gnl_utils.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/objs/check_map_part_two.o" beforeDir="false" afterPath="$PROJECT_DIR$/objs/check_map_part_two.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/objs/exit.o" beforeDir="false" afterPath="$PROJECT_DIR$/objs/exit.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/objs/fill_map.o" beforeDir="false" afterPath="$PROJECT_DIR$/objs/fill_map.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/objs/map_checker.o" beforeDir="false" afterPath="$PROJECT_DIR$/objs/map_checker.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/objs/map_credibility.o" beforeDir="false" afterPath="$PROJECT_DIR$/objs/map_credibility.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/objs/mini.o" beforeDir="false" afterPath="$PROJECT_DIR$/objs/mini.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/objs/so_long.o" beforeDir="false" afterPath="$PROJECT_DIR$/objs/so_long.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/so_long" beforeDir="false" afterPath="$PROJECT_DIR$/so_long" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs/check_map_part_two.c" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/check_map_part_two.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/srcs/exit.c" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/exit.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/srcs/mini.c" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/mini.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/srcs/so_long.c" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/so_long.c" afterDir="false" />
@@ -206,7 +169,7 @@
       <workItem from="1712910204545" duration="5669000" />
       <workItem from="1713342951378" duration="472000" />
       <workItem from="1713345382744" duration="15856000" />
-      <workItem from="1713429514078" duration="703000" />
+      <workItem from="1713429514078" duration="4285000" />
     </task>
     <servers />
   </component>

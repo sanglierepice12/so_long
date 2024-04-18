@@ -20,6 +20,8 @@ int	main(int arc, char **argv)
 		ft_exit(NULL, "Error: Not enough args. \n");
 	ft_parse_the_map(argv[1], &glob.map);
 	ft_check_map(&glob.map);
-	ft_start_mini(&glob);
+	printf("%s\n", glob.map.map[0]);
+	printf("np = %zu, nc = %zu, ne = %zu\n", glob.map.np, glob.map.nc, glob.map.ne);
+	ft_start_mini(glob);
 	//ft_exit(&glob.map, "lets go\n");
 }
