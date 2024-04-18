@@ -54,8 +54,6 @@ typedef struct s_mlx
 
 typedef struct s_glob
 {
-	size_t	i;
-	size_t j;
 	t_map			map;
 	t_mlx			data;
 	t_player		player;

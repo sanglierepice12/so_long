@@ -14,12 +14,18 @@
 
 int	handle_key(int keycode, t_glob *glob)
 {
+	size_t i;
+	size_t j;
+
 	printf("keycode = %d\n", keycode);
 	if (keycode == 65307)
 		ft_exit_success(glob, "You forced close the window.\n", 0);
 	if (keycode == 122) //Z
 	{
+		i = 0;
+		j = 0;
 		mlx_put_image_to_window(glob->data.mlx, glob->data.win, glob->background.img, i, j);
+		mlx_put_image_to_window(glob->data.mlx, glob->data.win, glob->background.img, 150, 150);
 		printf("%zu, %zu\n", i, j);
 	}
 /*	i = 0;
