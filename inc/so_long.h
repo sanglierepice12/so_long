@@ -20,11 +20,22 @@
 # include <X11/keysym.h>
 # include <fcntl.h>
 
+# define ASSET_WIDTH 32
+
+enum map_stuff{
+	BACKGROUND,
+	COIN,
+	DOOR,
+	WALL,
+	PLAYER
+};
+
 typedef struct s_map
 {
 	size_t	x;
 	size_t	y;
-	size_t	len;
+	size_t	width;
+	size_t	height;
 	size_t	np;
 	size_t	ne;
 	size_t	nc;
@@ -32,24 +43,17 @@ typedef struct s_map
 	char	**clone_map;
 }		t_map;
 
-typedef struct s_background
+typedef struct s_assets
 {
-	void	*img;
-	int		height;
-	int		width;
-}		t_background;
-
-typedef struct s_player
-{
-	void	*img;
-	int		height;
-	int		width;
-}		t_player;
+	void	*img[5];
+	int		h;
+}		t_assets;
 
 typedef struct s_mlx
 {
 	void	*mlx;
 	void	*win;
+
 }		t_mlx;
 
 typedef struct s_glob
@@ -57,7 +61,7 @@ typedef struct s_glob
 	t_map			map;
 	t_mlx			data;
 	t_player		player;
-	t_background	background;
+	t_assets		assets;
 }		t_glob;
 
 /*----------FILL_MAP---------*/

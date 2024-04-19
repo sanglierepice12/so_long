@@ -15,13 +15,12 @@
 static void	ft_check_len(t_map *map)
 {
 	size_t	i;
-	size_t	len;
 
-	len = ft_strlen(map->map[0]);
+	map->width = ft_strlen(map->map[0]);
 	i = 0;
 	while (map->map[i])
 	{
-		if (ft_strlen(map->map[i]) != len)
+		if (ft_strlen(map->map[i]) != map->width)
 			ft_exit(map, "Error: Map is not at the good len. [map_checker]\n");
 		i++;
 	}
@@ -50,12 +49,12 @@ void	ft_check_wall(t_map *map)
 	char	*map_e;
 
 	i = 0;
-	map->len = ft_map_len_check_side(map->map, map) - 1;
+	map->height = ft_map_len_check_side(map->map, map) - 1;
 	check_invalid_element(map->map, map);
 	map_z = ft_strdup(map->map[0]);
 	if (!map_z)
 		ft_exit(map, "Error: Calloc crash [map_check]\n");
-	map_e = ft_strdup(map->map[map->len]);
+	map_e = ft_strdup(map->map[map->height]);
 	if (!map_e)
 		ft_exit(map, "Error: Calloc crash [map_check]\n");
 	while (map_z[i] && map_e[i])
