@@ -47,30 +47,10 @@ void	ft_check_fd_assets(t_glob *glob)
 		ft_exit_success(glob, "Error: Cannot access to player. [ini_img]\n", 2);
 }
 
-void	ft_load_img(t_glob *glob)
+void	ft_init_img(t_glob *glob)
 {
 	glob->assets.h = 32;
 	ft_check_fd_assets(glob);
 	ft_init_xpm(&glob->data, &glob->assets, glob);
+	a_load(glob);
 }
-
-//ft_img_to_screen()
-/*size_t i;
-size_t j;
-
-char *path = "assets/bg.xpm";
-glob->background.height = 32;
-glob->background.width = 32;
-glob->background.img =
-i = 0;
-while (i <= glob->map.height * 32)
-{
-	printf("%zu\n", glob->map.height);
-	j = 0;
-	while (j <= glob->map.width * 32)
-	{
-		mlx_put_image_to_window(glob->data.mlx, glob->data.win, glob->background.img, i, j);
-		j+= 32;
-	}
-	i+= 32;
-}*/

@@ -14,20 +14,17 @@
 
 int	handle_key(int keycode, t_glob *glob)
 {
-		printf("keycode = %d\n", keycode);
+		//printf("keycode = %d\n", keycode);
 	if (keycode == 65307)
-	{
 		ft_exit_success(glob, "You closed the window.\n", 0);
-	}
-/*	if (keycode == 122) //Z
-	{
-	}*/
-/*	if (keycode == 113) //Q
-		move_right(glob);
-	if (keycode == 115) //S
-		move_right(glob);
-	if (keycode == 100) //D
-		move_right(glob);*/
+	if (keycode == 122 || keycode == 65362) //Z
+		ft_z_move(&glob->map, glob);
+	if (keycode == 115 || keycode == 65364) //S
+		ft_s_move(&glob->map, glob);
+	if (keycode == 100 || keycode == 65363) //D
+		ft_d_move(&glob->map, glob);
+	if (keycode == 113 || keycode == 65361) //Q
+		ft_q_move(&glob->map, glob);
 	return (0);
 }
 
@@ -42,13 +39,13 @@ void	ft_start_mini(t_glob *glob)
 	glob->data.mlx = mlx_init();
 	if (!glob->data.mlx)
 		ft_exit(&glob->map, "Error: mlx_init failed.\n");
-	glob->data.win = mlx_new_window(glob->data.mlx, glob->map.height * 32, glob->map.width * 32, "so fk long");
+	glob->data.win = mlx_new_window(glob->data.mlx, glob->map.width * 32, (glob->map.height + 1) * 32, "so fk long");
 	if (!glob->data.win)
 	{
 		mlx_destroy_display(glob->data.mlx);
 		ft_exit(&glob->map, "Error: mlx_win failed.\n");
 	}
-	ft_load_img(glob);
+	ft_init_img(glob);
 	mlx_hook(glob->data.win, 17, 1L << 0, close_window, glob);
 	mlx_hook(glob->data.win, 2, 1L << 0, handle_key, glob);
 	mlx_loop(glob->data.mlx);

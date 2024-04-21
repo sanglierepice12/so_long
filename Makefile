@@ -18,7 +18,9 @@ SRCS	=	so_long.c				\
 			map_credibility.c		\
 			mini.c					\
 			init_img.c				\
-			load_img.c
+			fill_img.c				\
+			moves.c					\
+			rules.c
 
 OBJS	=	${SRCS:%.c=${OBJ_D}%.o}
 

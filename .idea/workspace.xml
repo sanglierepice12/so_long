@@ -14,8 +14,21 @@
   <component name="ChangeListManager">
     <list default="true" id="8323335c-7c2d-4891-8c3f-95a1ac8a54c6" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srcs/exit.c" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/exit.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coucou.ber" beforeDir="false" afterPath="$PROJECT_DIR$/coucou.ber" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inc/so_long.h" beforeDir="false" afterPath="$PROJECT_DIR$/inc/so_long.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/objs/check_map_part_two.o" beforeDir="false" afterPath="$PROJECT_DIR$/objs/check_map_part_two.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/objs/fill_map.o" beforeDir="false" afterPath="$PROJECT_DIR$/objs/fill_map.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/objs/init_img.o" beforeDir="false" afterPath="$PROJECT_DIR$/objs/init_img.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/objs/load_img.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/objs/map_checker.o" beforeDir="false" afterPath="$PROJECT_DIR$/objs/map_checker.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/objs/mini.o" beforeDir="false" afterPath="$PROJECT_DIR$/objs/mini.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/objs/so_long.o" beforeDir="false" afterPath="$PROJECT_DIR$/objs/so_long.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/so_long" beforeDir="false" afterPath="$PROJECT_DIR$/so_long" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs/check_map_part_two.c" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/check_map_part_two.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/srcs/init_img.c" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/init_img.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs/load_img.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs/mini.c" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/mini.c" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,7 +143,7 @@
       <workItem from="1713345382744" duration="15856000" />
       <workItem from="1713429514078" duration="4285000" />
       <workItem from="1713530941275" duration="7826000" />
-      <workItem from="1713712749309" duration="2377000" />
+      <workItem from="1713712749309" duration="13868000" />
     </task>
     <servers />
   </component>

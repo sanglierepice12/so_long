@@ -81,7 +81,16 @@ void	ft_map_is_available(t_map *map);
 /*-----------MLX---------------*/
 void	ft_start_mini(t_glob *glob);
 /*-----------MLX_IMG-----------*/
-void	ft_load_img(t_glob *glob);
+void	ft_init_img(t_glob *glob);
+void	a_load(t_glob *glob);
+/*-----------MLX_MOVES-----------*/
+void	ft_z_move(t_map *map, t_glob *glob);
+void	ft_s_move(t_map *map, t_glob *glob);
+void	ft_d_move(t_map *map, t_glob *glob);
+void	ft_q_move(t_map *map, t_glob *glob);
+/*-----------MLX_RULES-----------*/
+void	ft_coin_count(t_map *map, t_glob *glob);
+
 
 /*-----------EXIT-------------*/
 void	ft_free_map(t_map *map);
