@@ -36,8 +36,12 @@ void	ft_img_to_map(t_map *map, t_assets *assets, t_mlx *data)
 				mlx_put_image_to_window(data->mlx, data->win, \
 				assets->img[BACKGROUND], j * 32, i * 32);
 			if (map->map[i][j] == 'E')
+			{
+				map->exit_x = (size_t)i;
+				map->exit_y = (size_t)j;
 				mlx_put_image_to_window(data->mlx, data->win, \
-				assets->img[DOOR], j * 32, i * 32);
+				assets->img[BACKGROUND], j * 32, i * 32);
+			}
 			j++;
 		}
 		i++;

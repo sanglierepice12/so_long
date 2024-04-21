@@ -39,6 +39,8 @@ typedef struct s_map
 	size_t	np;
 	size_t	ne;
 	size_t	nc;
+	size_t	exit_x;
+	size_t	exit_y;
 	char	**map;
 	char	**clone_map;
 }		t_map;
@@ -90,6 +92,7 @@ void	ft_d_move(t_map *map, t_glob *glob);
 void	ft_q_move(t_map *map, t_glob *glob);
 /*-----------MLX_RULES-----------*/
 void	ft_coin_count(t_map *map, t_glob *glob);
+void	ft_door(t_map *map, t_glob *glob);
 
 
 /*-----------EXIT-------------*/
