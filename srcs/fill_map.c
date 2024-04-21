@@ -17,6 +17,8 @@ static int	ft_check_ext(char *argv, t_map *map)
 	size_t	len;
 	int		fd;
 
+	map->map = NULL;
+	map->clone_map = NULL;
 	fd = 0;
 	len = ft_strlen(argv);
 	if (ft_strncmp(argv + (len - 4), ".ber", 4))

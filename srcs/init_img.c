@@ -26,30 +26,31 @@ void	ft_check_fd_assets(t_glob *glob, t_mlx *data, t_assets *assets)
 		ft_exit_success(glob, "Error: Cannot access to player. [ini_img]\n", 2);
 	assets->img[BACKGROUND] = \
 		mlx_xpm_file_to_image(data->mlx, \
-		"./assets/bg.xpm", assets->h, assets->h);
+		"./assets/bg.xpm", &assets->h, &assets->h);
 	assets->img[COIN] = \
 		mlx_xpm_file_to_image(data->mlx, \
-		"./assets/coin.xpm", assets->h, assets->h);
+		"./assets/coin.xpm", &assets->h, &assets->h);
 	assets->img[DOOR] = \
 		mlx_xpm_file_to_image(data->mlx, \
-		"./assets/door.xpm", assets->h, assets->h);
+		"./assets/door.xpm", &assets->h, &assets->h);
 	assets->img[WALL] = \
 		mlx_xpm_file_to_image(data->mlx, \
-		"./assets/wall.xpm", assets->h, assets->h);
+		"./assets/wall.xpm", &assets->h, &assets->h);
 	assets->img[PLAYER] = \
 		mlx_xpm_file_to_image(data->mlx, \
-		"./assets/player.xpm", assets->h, assets->h);
+		"./assets/player.xpm", &assets->h, &assets->h);
 }
 
-void	ft_check_and_init(t_map *map, t_mlx *data, t_glob *glob)
+static void	ft_check_and_init_img(t_glob *glob)
 {
+	glob->assets.h = 32;
 	ft_check_fd_assets(glob, &glob->data, &glob->assets);
 }
 
 void	ft_load_img(t_glob *glob)
 {
-	ft_check_and_init(&glob->map, &glob->data, glob);
-	ft_img_to_screen()
+	ft_check_and_init_img(glob);
+	//ft_img_to_screen()
 	/*size_t i;
 	size_t j;
 

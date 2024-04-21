@@ -60,7 +60,6 @@ typedef struct s_glob
 {
 	t_map			map;
 	t_mlx			data;
-	t_player		player;
 	t_assets		assets;
 }		t_glob;
 
