@@ -17,7 +17,7 @@ int	handle_key(int keycode, t_glob *glob)
 		printf("keycode = %d\n", keycode);
 	if (keycode == 65307)
 	{
-		ft_exit_success(glob, "You forced close the window.\n", 0);
+		ft_exit_success(glob, "You closed the window.\n", 0);
 	}
 /*	if (keycode == 122) //Z
 	{
@@ -33,7 +33,7 @@ int	handle_key(int keycode, t_glob *glob)
 
 int	close_window(t_glob *glob)
 {
-	ft_exit_success(glob, "You forced close the window.\n", 0);
+	ft_exit_success(glob, "You closed the window.\n", 0);
 	return (0);
 }
 
