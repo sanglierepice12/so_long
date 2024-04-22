@@ -16,17 +16,19 @@ void	ft_door(t_map *map, t_glob *glob)
 {
 	if (map->map[map->y][map->x] == 'E' && map->nc == 0)
 		ft_exit_success(glob, "GG\n", 1);
-	/*mlx_put_image_to_window(glob->data.mlx, glob->data.win, \
-                glob->assets.img[DOOR], glob->map.exit_y * 32, glob->map.exit_x * 32);*/
 	if (map->nc == 0)
 		mlx_put_image_to_window(glob->data.mlx, glob->data.win, \
-                glob->assets.img[DOOR],	 glob->map.exit_y * 32, glob->map.exit_x * 32);
+			glob->assets.img[DOOR], glob->map.exit_y * 32, \
+				glob->map.exit_x * 32);
 }
 
-void	ft_coin_count(t_map *map, t_glob *glob)
+void	ft_coin_count(t_map *map)
 {
 	int	i;
 	int	j;
+
+	map->moves += 1;
+	ft_printf("Total moves = %d\n", map->moves);
 	i = map->y;
 	j = map->x;
 	if (map->map[map->y][map->x] == 'C')
@@ -35,6 +37,4 @@ void	ft_coin_count(t_map *map, t_glob *glob)
 		if (map->nc > 0)
 			map->nc -= 1;
 	}
-	(void)glob;
-	//ft_door(map, glob);
 }

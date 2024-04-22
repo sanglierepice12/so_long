@@ -20,9 +20,8 @@
 # include <X11/keysym.h>
 # include <fcntl.h>
 
-# define ASSET_WIDTH 32
-
-enum map_stuff{
+enum e_map_stuff
+{
 	BACKGROUND,
 	COIN,
 	DOOR,
@@ -32,6 +31,7 @@ enum map_stuff{
 
 typedef struct s_map
 {
+	int		moves;
 	size_t	x;
 	size_t	y;
 	size_t	width;
@@ -81,6 +81,7 @@ void	check_invalid_element(char **str, t_map *map);
 /*-------MAP_VALIDITY----------*/
 void	ft_clone_map(t_map *map);
 void	ft_map_is_available(t_map *map);
+char	**ft_restart_map(char **map_base, char **map_broken);
 
 /*-----------MLX---------------*/
 void	ft_start_mini(t_glob *glob);
@@ -93,9 +94,8 @@ void	ft_s_move(t_map *map, t_glob *glob);
 void	ft_d_move(t_map *map, t_glob *glob);
 void	ft_q_move(t_map *map, t_glob *glob);
 /*-----------MLX_RULES-----------*/
-void	ft_coin_count(t_map *map, t_glob *glob);
+void	ft_coin_count(t_map *map);
 void	ft_door(t_map *map, t_glob *glob);
-
 
 /*-----------EXIT-------------*/
 void	ft_free_map(t_map *map);

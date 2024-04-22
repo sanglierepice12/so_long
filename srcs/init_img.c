@@ -19,7 +19,7 @@ void	ft_init_xpm(t_mlx *data, t_assets *assets, t_glob *glob)
 			"./assets/bg.xpm", &assets->h, &assets->h);
 	if (assets->img[BACKGROUND] == NULL)
 		ft_exit_success(glob, "Error: Cannot access to bg. [ini_img]\n", 2);
-					assets->img[COIN] = \
+	assets->img[COIN] = \
 			mlx_xpm_file_to_image(data->mlx, \
 			"./assets/coin.xpm", &assets->h, &assets->h);
 	assets->img[DOOR] = \
@@ -60,6 +60,7 @@ void	ft_check_fd_assets(t_glob *glob)
 void	ft_init_img(t_glob *glob)
 {
 	glob->assets.h = 32;
+	glob->map.moves = 0;
 	ft_check_fd_assets(glob);
 	ft_init_xpm(&glob->data, &glob->assets, glob);
 	a_load(glob);
