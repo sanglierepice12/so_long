@@ -20,7 +20,7 @@ void	ft_door(t_map *map, t_glob *glob)
                 glob->assets.img[DOOR], glob->map.exit_y * 32, glob->map.exit_x * 32);*/
 	if (map->nc == 0)
 		mlx_put_image_to_window(glob->data.mlx, glob->data.win, \
-                glob->assets.img[DOOR], glob->map.exit_y * 32, glob->map.exit_x * 32);
+                glob->assets.img[DOOR],	 glob->map.exit_y * 32, glob->map.exit_x * 32);
 }
 
 void	ft_coin_count(t_map *map, t_glob *glob)
