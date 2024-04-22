@@ -41,6 +41,7 @@ typedef struct s_map
 	size_t	nc;
 	size_t	exit_x;
 	size_t	exit_y;
+	int		fd;
 	char	**map;
 	char	**clone_map;
 }		t_map;
@@ -49,6 +50,7 @@ typedef struct s_assets
 {
 	void	*img[5];
 	int		h;
+	int		fd[5];
 }		t_assets;
 
 typedef struct s_mlx

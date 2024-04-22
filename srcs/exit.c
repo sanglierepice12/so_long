@@ -18,6 +18,8 @@ void	ft_free_map(t_map *map)
 		ft_free_tab(map->map);
 	if (map->clone_map)
 		ft_free_tab(map->clone_map);
+	if (map->fd)
+		close(map->fd);
 }
 
 void	ft_destroy(t_mlx *data)

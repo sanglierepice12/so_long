@@ -35,16 +35,26 @@ void	ft_init_xpm(t_mlx *data, t_assets *assets, t_glob *glob)
 
 void	ft_check_fd_assets(t_glob *glob)
 {
-	if ((open("./assets/bg.xpm", O_RDONLY) == -1))
+	glob->assets.fd[BACKGROUND] = open("./assets/bg.xpm", O_RDONLY);
+	if (glob->assets.fd[BACKGROUND] == -1)
 		ft_exit_success(glob, "Error: Cannot access to bg. [ini_img]\n", 2);
-	if ((open("./assets/coin.xpm", O_RDONLY)) == -1)
+	close (glob->assets.fd[BACKGROUND]);
+	glob->assets.fd[COIN] = open("./assets/coin.xpm", O_RDONLY);
+	if (glob->assets.fd[COIN] == -1)
 		ft_exit_success(glob, "Error: Cannot access to coin. [ini_img]\n", 2);
-	if ((open("./assets/door.xpm", O_RDONLY)) == -1)
+	close (glob->assets.fd[COIN]);
+	glob->assets.fd[DOOR] = open("./assets/door.xpm", O_RDONLY);
+	if (glob->assets.fd[DOOR] == -1)
 		ft_exit_success(glob, "Error: Cannot access to door. [ini_img]\n", 2);
-	if ((open("./assets/wall.xpm", O_RDONLY)) == -1)
+	close (glob->assets.fd[DOOR]);
+	glob->assets.fd[WALL] = open("./assets/wall.xpm", O_RDONLY);
+	if (glob->assets.fd[WALL] == -1)
 		ft_exit_success(glob, "Error: Cannot access to wall. [ini_img]\n", 2);
-	if ((open("./assets/player.xpm", O_RDONLY)) == -1)
+	close (glob->assets.fd[WALL]);
+	glob->assets.fd[PLAYER] = open("./assets/player.xpm", O_RDONLY);
+	if (glob->assets.fd[PLAYER] == -1)
 		ft_exit_success(glob, "Error: Cannot access to player. [ini_img]\n", 2);
+	close (glob->assets.fd[PLAYER]);
 }
 
 void	ft_init_img(t_glob *glob)

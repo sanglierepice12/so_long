@@ -12,21 +12,19 @@
 
 #include "../inc/so_long.h"
 
-static int	ft_check_ext(char *argv, t_map *map)
+static void	ft_check_ext(char *argv, t_map *map)
 {
 	size_t	len;
-	int		fd;
 
 	map->map = NULL;
 	map->clone_map = NULL;
-	fd = 0;
+	map->fd = 0;
 	len = ft_strlen(argv);
 	if (ft_strncmp(argv + (len - 4), ".ber", 4))
 		ft_exit(map, "Error: Wrong extension. [fill]\n");
-	fd = open(argv, O_RDONLY);
-	if (fd == -1)
+	map->fd = open(argv, O_RDONLY);
+	if (map->fd == -1)
 		ft_exit(map, "Error: Problem with fd. [fill]\n");
-	return (fd);
 }
 
 char	*str_join_map(char *src, char *map_buf, t_map *map)
@@ -67,7 +65,7 @@ static void	ft_fill_map_following(t_map *map, char *map_gen)
 	free(map_gen);
 }
 
-static void	ft_fill_map(int fd, t_map *map)
+static void	ft_fill_map(t_map *map)
 {
 	size_t	bytes;
 	char	map_buf[1025];
@@ -81,7 +79,7 @@ static void	ft_fill_map(int fd, t_map *map)
 	bytes = 1024;
 	while (bytes == 1024)
 	{
-		bytes = read(fd, map_buf, bytes);
+		bytes = read(map->fd, map_buf, bytes);
 		if (bytes <= 0)
 			ft_exit(map, "Error: Problem reading file. [fill]\n");
 		map_buf[bytes] = '\0';
@@ -95,8 +93,6 @@ static void	ft_fill_map(int fd, t_map *map)
 
 void	ft_parse_the_map(char *argv, t_map *map)
 {
-	int		fd;
-
-	fd = ft_check_ext(argv, map);
-	ft_fill_map(fd, map);
+	ft_check_ext(argv, map);
+	ft_fill_map(map);
 }
