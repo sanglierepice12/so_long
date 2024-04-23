@@ -33,6 +33,9 @@ void	ft_img_to_win(t_map *map, t_glob *glob, int i, int j)
 		mlx_put_image_to_window(glob->data.mlx, glob->data.win, \
 				glob->assets.img[BACKGROUND], j * 32, i * 32);
 	}
+	if (map->map[i][j] == 'X')
+		mlx_put_image_to_window(glob->data.mlx, glob->data.win, \
+				glob->assets.img[ENEMY], j * 32, i * 32);
 }
 
 void	ft_img_to_map(t_map *map, t_glob *glob)

@@ -31,6 +31,9 @@ void	ft_init_xpm(t_mlx *data, t_assets *assets, t_glob *glob)
 	assets->img[PLAYER] = \
 			mlx_xpm_file_to_image(data->mlx, \
 			"./assets/player.xpm", &assets->h, &assets->h);
+	assets->img[ENEMY] = \
+			mlx_xpm_file_to_image(data->mlx, \
+			"./assets/enemy.xpm", &assets->h, &assets->h);
 }
 
 void	ft_check_fd_assets(t_glob *glob)
@@ -51,11 +54,14 @@ void	ft_check_fd_assets(t_glob *glob)
 	if (glob->assets.fd[WALL] == -1)
 		ft_exit_success(glob, "Error: Cannot access to wall. [ini_img]\n", 2);
 	close (glob->assets.fd[WALL]);
+	glob->assets.fd[ENEMY] = open("./assets/enemy.xpm", O_RDONLY);
+	if (glob->assets.fd[ENEMY] == -1)
+		ft_exit_success(glob, "Error: Cannot access to enemy. [ini_img]\n", 2);
+	close (glob->assets.fd[ENEMY]);
 	glob->assets.fd[PLAYER] = open("./assets/player.xpm", O_RDONLY);
 	if (glob->assets.fd[PLAYER] == -1)
 		ft_exit_success(glob, "Error: Cannot access to player. [ini_img]\n", 2);
-	close (glob->assets.fd[PLAYER]);
-}
+	close (glob->assets.fd[PLAYER]);}
 
 void	ft_init_img(t_glob *glob)
 {

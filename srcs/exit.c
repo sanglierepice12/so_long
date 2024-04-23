@@ -41,6 +41,8 @@ void	ft_destroy_img(t_assets *assets, t_mlx *data)
 		mlx_destroy_image(data->mlx, assets->img[WALL]);
 	if (assets->img[PLAYER])
 		mlx_destroy_image(data->mlx, assets->img[PLAYER]);
+	if (assets->img[ENEMY])
+		mlx_destroy_image(data->mlx, assets->img[ENEMY]);
 }
 
 void	ft_exit_success(t_glob *glob, char *msg, int flag)

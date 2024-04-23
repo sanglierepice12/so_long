@@ -50,6 +50,7 @@ void	check_invalid_element(char **str, t_map *map)
 		{
 			if ((str[i][j] != 'E') && (str[i][j] != 'P') && (str[i][j] != 'C'))
 				if ((str[i][j] != '1') && (str[i][j] != '0'))
+					if ((str[i][j] != 'X'))
 					ft_exit(map, "Error: Something looks not in the plan.\n");
 			j++;
 		}

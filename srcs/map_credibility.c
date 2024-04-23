@@ -14,7 +14,8 @@
 
 static char	**ft_map_filler(char **map_clone, size_t x, size_t y, t_map *map)
 {
-	if (map_clone[x][y] != '1' && map_clone[x][y] != 'O')
+	if (map_clone[x][y] != '1' && map_clone[x][y] != 'O' && \
+		map_clone[x][y] != 'X')
 	{
 		map_clone[x][y] = 'O';
 		ft_map_filler(map_clone, x - 1, y, map);

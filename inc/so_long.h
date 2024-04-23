@@ -26,6 +26,7 @@ enum e_map_stuff
 	COIN,
 	DOOR,
 	WALL,
+	ENEMY,
 	PLAYER
 };
 
@@ -38,19 +39,20 @@ typedef struct s_map
 	size_t	height;
 	size_t	np;
 	size_t	ne;
-	size_t	nc;
+	int		nc;
 	size_t	exit_x;
 	size_t	exit_y;
 	int		fd;
 	char	**map;
 	char	**clone_map;
+	char	*str_moves;
 }		t_map;
 
 typedef struct s_assets
 {
-	void	*img[5];
+	void	*img[6];
 	int		h;
-	int		fd[5];
+	int		fd[6];
 }		t_assets;
 
 typedef struct s_mlx

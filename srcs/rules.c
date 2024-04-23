@@ -6,16 +6,28 @@
 /*   By: gostr <gostr@student.1337.ma>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/21 20:22:11 by gostr             #+#    #+#             */
-/*   Updated: 2024/04/21 20:22:11 by gostr            ###   ########.fr       */
+/*   Updated: 2024/04/23 18:40:31 by gostr            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../inc/so_long.h"
 
+void	ft_itoa_nc(t_map *map, t_glob *glob)
+{
+	map->str_moves = ft_itoa(map->moves);
+	mlx_put_image_to_window(glob->data.mlx, glob->data.win, \
+				glob->assets.img[WALL], 0, 0);
+	mlx_string_put(glob->data.mlx, glob->data.win, 15, 20, 0x00FF0000, map->str_moves);
+	free(map->str_moves);
+}
+
 void	ft_door(t_map *map, t_glob *glob)
 {
+	ft_itoa_nc(map, glob);
 	if (map->map[map->y][map->x] == 'E' && map->nc == 0)
 		ft_exit_success(glob, "GG\n", 1);
+	if (map->map[map->y][map->x] == 'X')
+		ft_exit_success(glob, "YOU DIED\n", 1);
 	if (map->nc == 0)
 		mlx_put_image_to_window(glob->data.mlx, glob->data.win, \
 			glob->assets.img[DOOR], glob->map.exit_y * 32, \
