@@ -38,6 +38,8 @@ void	ft_start_mini(t_glob *glob)
 	glob->data.mlx = mlx_init();
 	if (!glob->data.mlx)
 		ft_exit(&glob->map, "Error: mlx_init failed.\n");
+	printf("wid = %zu\n", glob->map.width);
+	printf("wid = %zu\n", glob->map.height);
 	glob->data.win = mlx_new_window(glob->data.mlx, glob->map.width * 32, \
 		(glob->map.height + 1) * 32, "so fk long");
 	if (!glob->data.win)

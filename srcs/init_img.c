@@ -61,7 +61,8 @@ void	ft_check_fd_assets(t_glob *glob)
 	glob->assets.fd[PLAYER] = open("./assets/player.xpm", O_RDONLY);
 	if (glob->assets.fd[PLAYER] == -1)
 		ft_exit_success(glob, "Error: Cannot access to player. [ini_img]\n", 2);
-	close (glob->assets.fd[PLAYER]);}
+	close (glob->assets.fd[PLAYER]);
+}
 
 void	ft_init_img(t_glob *glob)
 {

@@ -15,9 +15,11 @@
 void	ft_itoa_nc(t_map *map, t_glob *glob)
 {
 	map->str_moves = ft_itoa(map->moves);
+	if (!map->str_moves)
+		ft_exit_success(glob, "Error : Calloc failed.\n", 2);
 	mlx_put_image_to_window(glob->data.mlx, glob->data.win, \
 				glob->assets.img[WALL], 0, 0);
-	mlx_string_put(glob->data.mlx, glob->data.win, 15, 20, 0x00FF0000, map->str_moves);
+	mlx_string_put(glob->data.mlx, glob->data.win, 15, 20, 000, map->str_moves);
 	free(map->str_moves);
 }
 

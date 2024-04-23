@@ -105,4 +105,6 @@ void	ft_check_map(t_map *map)
 	ft_check_wall(map);
 	ft_check_token(map->map, map, 0);
 	ft_map_is_available(map);
+	if (map->width > 54 || map->height > 32)
+		ft_exit(map, "Error : Map to big for your screen.\n");
 }
