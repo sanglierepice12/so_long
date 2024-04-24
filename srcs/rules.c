@@ -42,7 +42,6 @@ void	ft_coin_count(t_map *map)
 	int	j;
 
 	map->moves += 1;
-	ft_printf("Total moves = %d\n", map->moves);
 	i = map->y;
 	j = map->x;
 	if (map->map[map->y][map->x] == 'C')

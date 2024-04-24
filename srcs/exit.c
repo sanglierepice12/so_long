@@ -50,6 +50,7 @@ void	ft_exit_success(t_glob *glob, char *msg, int flag)
 	ft_free_map(&glob->map);
 	ft_destroy_img(&glob->assets, &glob->data);
 	ft_destroy(&glob->data);
+	ft_printf("Total moves = %d\n", glob->map.moves);
 	ft_putstr_fd(msg, 1);
 	exit(flag);
 }

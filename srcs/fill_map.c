@@ -20,6 +20,8 @@ static void	ft_check_ext(char *argv, t_map *map)
 	map->clone_map = NULL;
 	map->fd = 0;
 	len = ft_strlen(argv);
+	if (len < 4)
+		ft_exit(map, "Error: Wrong extension. [fill]\n");
 	if (ft_strncmp(argv + (len - 4), ".ber", 4))
 		ft_exit(map, "Error: Wrong extension. [fill]\n");
 	map->fd = open(argv, O_RDONLY);
@@ -36,7 +38,10 @@ char	*str_join_map(char *src, char *map_buf, t_map *map)
 	len = ft_strlen(src) + ft_strlen(map_buf);
 	temp = ft_calloc(len + 1, sizeof(char));
 	if (!temp)
+	{
+		free(src);
 		ft_exit(map, "Error: Calloc crash. [fill]\n");
+	}
 	i = 0;
 	while (src[i])
 	{
